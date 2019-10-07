@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Roivant</title>
+    <title>Roivant Preso</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
@@ -32,24 +32,7 @@
       <div class="slides">
         <section>
           <h2>Daniel Deverell</h2>
-        </section>
-        <section>
-          <h2>Data</h2>
-          <ul>
-            <li>Open Payments</li>
-            <li>Mandated by the ACA / Sunshine Act</li>
-          </ul>
-          <hr />
-          <h2>Issues</h2>
-          <ul>
-            <li>Clean - Drug listing</li>
-            <li>The story it doesn’t tell</li>
-            <li>Principal Investigator vs Sub investigator</li>
-            <li>
-              Not confident in the quality and completeness of data from an
-              audit and compliance perspective
-            </li>
-          </ul>
+          <p>Roivant - Oct 7, 2019</p>
         </section>
 
         <section>
@@ -59,15 +42,25 @@
         </section>
 
         <section>
+          <h2>Issues</h2>
+          <ul>
+            <li>Not clean - drug listing incomplete</li>
+            <li>The story it doesn’t tell</li>
+            <li>Principal Investigator vs Sub investigator</li>
+            <li>Not confident in the quality and completeness of data</li>
+            <li>Difficult to parse</li>
+          </ul>
+        </section>
+
+        <section>
           <h2>Second Investigation</h2>
           <ul>
+            <li>ACA / Sunshine Act</li>
             <li>
-              <a href="https://openpaymentsdata-origin.cms.gov"
+              Open Payments
+              <a href="https://openpaymentsdata-origin.cms.gov" target="_blank"
                 >OpenPaymentsData.CMS.gov</a
               >
-            </li>
-            <li>
-              "These guys are good! (Maybe I should apply for a job there.)"
             </li>
             <li>Developer APIs</li>
             <li>Visualizations</li>
@@ -78,11 +71,13 @@
           <h2>View Source</h2>
           <ul>
             <li>
-              Uses <a href="https://reactjs.org">React</a> and
-              <a href="https://d3js.org">D3</a> for data viz
+              Uses <a href="https://reactjs.org" target="_blank">React</a> and
+              <a href="https://d3js.org" target="_blank">D3</a> for data viz
             </li>
             <li>
-              <a href="https://observablehq.com/@d3/hierarchical-bar-chart"
+              <a
+                href="https://observablehq.com/@d3/hierarchical-bar-chart"
+                target="_blank"
                 >SVG</a
               >
               - scalable vector graphics
@@ -91,21 +86,32 @@
         </section>
 
         <section>
-          <h2>Implementation - the Lazy Developer</h2>
+          <h2>Implementation - Lazy Developer</h2>
           <ul>
-            <li><a href="https://www.highcharts.com">HighCharts</a></li>
             <li>
-              <a href="https://postlight.com/labs/react-google-sheet-to-chart"
+              <a href="https://www.highcharts.com" target="_blank"
+                >HighCharts</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://postlight.com/labs/react-google-sheet-to-chart"
+                target="_blank"
                 >PostLight</a
               >
             </li>
           </ul>
-          <hr />
+        </section>
+
+        <section>
           <h2>Implementation - the React Developer</h2>
           <ul>
-            <li>React</li>
+            <li>Server - backend speed, data APIs</li>
+            <li>React - data ingestion, UI output</li>
+            <li>D3 - convenience library</li>
           </ul>
         </section>
+
         <section>
           <img
             src="https://s3.amazonaws.com/media-p.slid.es/uploads/415741/images/3654588/giphy__1_.gif"
@@ -126,8 +132,8 @@
           { src: 'plugin/markdown/marked.js' },
           { src: 'plugin/markdown/markdown.js' },
           { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true }
-        ]
+          { src: 'plugin/highlight/highlight.js', async: true },
+        ],
       });
     </script>
   </body>
